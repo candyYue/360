@@ -1,0 +1,22 @@
+// https://github.com/ElemeFE/element/blob/dev/packages/theme-chalk/src/common/var.scss
+@import './vars.scss';
+
+/* 改变主题色变量 */
+
+$--color-primary: $theme;
+$--color-text-primary:$colorText;
+$--color-text-regular:$colorText;
+$--checkbox-checked-text-color :$colorText;
+$--color-success: $success;
+$--color-warning: $warning;
+$--color-danger: $danger;
+$--color-text-primary:$textColor;
+$--loading-spinner-size: 18px;
+$--border-color-base: $border-input;
+$--scrollbar-background-color: rgba(#c1c1c1, .3);
+$--scrollbar-hover-background-color: rgba(#c1c1c1, .5);
+
+/* 改变 icon 字体路径变量，必需 */
+
+$--font-path: '../../../node_modules/element-ui/lib/theme-chalk/fonts';
+@import "../../../node_modules/element-ui/packages/theme-chalk/src/index.scss";

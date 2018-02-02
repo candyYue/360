@@ -1,0 +1,86 @@
+// https://github.com/ElemeFE/element/blob/dev/packages/theme-chalk/src/reset.scss
+@import './vars.scss';
+
+*{
+  box-sizing: border-box;
+}
+body {
+  margin: 0; // 1
+  font-size: $fontSize;
+  font-family: $fontFamily;
+  line-height: $fontLineHeight;
+  color: $colorText;
+  background-color: $colorBg;
+  min-height: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  background: transparent; // 1
+  text-decoration: none;
+  &:active {
+    outline: 0; // 3
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+form,
+blockquote {
+  margin: 0;
+}
+
+ul,
+ol,
+li,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none outside none;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 2;
+  font-weight: normal;
+}
+
+textarea{
+  resize: none!important;
+  outline: none
+}
+
+
+// 表单placeholder样式
+// Firefox 19+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  font-family: $fontFamily;
+  color:#b4bccd
+}
+
+// Internet Explorer 10+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  font-family: $fontFamily;
+  color:#b4bccd
+}
+
+// Safari and Chrome
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  font-family: $fontFamily;
+  color:#b4bccd
+}
